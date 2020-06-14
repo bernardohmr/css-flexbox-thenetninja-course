@@ -9,7 +9,7 @@ body{
 
 .wrapper{
     width: 100%;
-    max-width: 960px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -17,24 +17,23 @@ body{
     display: flex;
     background: white;
     flex-wrap: wrap;
+    flex-flow: column;
+    height: 600px;
 }
 
 .box{
-    height: 100px;
-    flex-grow: 1;
+    width: 100px;
+    flex: 0 0 100px;
 }
 
 .one{
     background: red;
-    flex-basis: 100px;
 }
 
 .two{
     background: blue;
-    flex-basis: 200px;
 }
 
 .three{
     background: green;
-    flex-basis: 300px;
 }

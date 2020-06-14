@@ -61,8 +61,21 @@ a.fb{
 }
 
 /* grid vs flex base styles */
-
-
+#blocks{
+  margin: 20px;
+}
+article{
+  background: #fff;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+article h2{
+  text-align: center;
+  font-size: 20px;
+  margin: 10px 0;
+}
 
 /* flex styles */
 
@@ -80,19 +93,27 @@ nav ul.social{
 nav ul{
   display: flex;
 }
-
 nav li{
   flex: 1 1 0;
 }
-    
 nav{
   display: flex;
   justify-content: space-between;
 }
-  
 ul.social{
   margin: 0;
 }
+#blocks{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+article{
+  flex: 0 1 32%;
+  transition: flex-basis 0.25s linear;
+}
+article.stack{
+  flex: 0 1 100%;
+}
     
 } /* end media 768 */
-
